@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.staticfiles.urls import static
 from django.urls import path, include
-from django.conf.urls import include
 
 from . import settings_common, settings_dev
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

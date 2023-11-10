@@ -96,4 +96,3 @@ class DiaryDeleteView(LoginRequiredMixin, OnlyYouMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, '日記を削除しました。')
         return super().delete(request, *args, **kwargs)
-
